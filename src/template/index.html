@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Makan Apa</title>
+</head>
+
+<body id="top">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-3" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger larger" href="/" title="Ke atas">
+                <img src="/assets/img/logo.svg" alt="">
+            </a>
+            <div class="navbar-search-toggler-wrapper">
+                <a href="#!" class="navbar-search-toggler d-lg-none d-xl-none"><i class="fas fa-search"></i></a>
+            </div>
+            <div class="navbar-search-outer">
+                <div class="container">
+                    <ul class="navbar-nav ml-auto navbar-search-wrapper">
+                        <div class="navbar-search d-flex align-items-center">
+                            <div class="search-secton">
+                                <input class="form-control input-search" type="search" placeholder="Cari makan" aria-label="Search">
+                                <button class="btn btn-secondary search-btn" type="submit">Cari</button>
+                            </div>
+                            <a class="btn btn-secondary random-btn" href="#pageSection" title="Cari makanan random"><i class="fas fa-dice"></i></a>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="tophead" style="min-height: 100vh; height: 100vh;">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center justify-content-center text-center">
+                <div class="col-lg-10 align-self-end tophead-top-point">
+                    <div class="top-section">
+                        <div class="illustration">
+                            <img class="burg" src="/assets/img/illustration/burger.png" alt="">
+                        </div>
+                        <div class="text">
+                            <p class="text-white font-weight-light">Kamu suka bingung mau makan apa? <br>Kami hadir menyelamatkan kamu!</p>
+                        </div>
+                    </div>
+                    <hr class="divider mt-4" />
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-5 col-xl-4 align-self-baseline">
+                    <div class="d-flex align-items-center mb-1">
+                        <input class="form-control form-control-xl input-search input-search-tophead" type="search" placeholder="Cari makan" aria-label="Search" autofocus>
+                        <button class="btn btn-xl btn-secondary search-btn search-btn-tophead" type="submit">Cari</button>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-5 col-xl-4 align-self-baseline random-btn-wrapper">
+                    <div class="d-flex align-items-center">
+                        <a class="btn btn-secondary btn-xl btn-block random-btn random-btn-tophead" href="#pageSection" title="Cari makanan random"><i class="fas fa-dice mr-2"></i>Randomize</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <section class="page-section hidden" id="pageSection">
+        <div class="container">
+            <div class="d-flex justify-content-center">
+                <div class="col-lg-12 text-center">
+                    <h2 class="mt-0 search-header">Daftar makanan</h2>
+                    <div class="keyword">
+
+                    </div>
+                    <hr class="divider my-4" />
+                    <div class="search-result">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        Copyright (c) 2020 Yohanes Pajero All Rights Reserved.
+    </footer>
+
+    <div id="imgModal" class="modal img-modal">
+        <i class="fas fa-search fa-times close" id="imgModalClose"></i>
+        <img class="modal-content" id="imgModalImg">
+    </div>
+
+</body>
+
+</html>

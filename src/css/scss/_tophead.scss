@@ -1,0 +1,106 @@
+@keyframes float {
+    0% {
+        transform: translatey(0px);
+    }
+
+    50% {
+        transform: translatey(-20px);
+    }
+
+    100% {
+        transform: translatey(0px);
+    }
+}
+@keyframes beat {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+header.tophead {
+    padding-top: 6rem;
+    padding-bottom: calc(10rem - #{$navbar-height});
+    background-color: $primary;
+    width: 100%;
+    height: calc(100vh + 40px);
+    // position: fixed;
+    .illustration {
+        img {
+            height: auto;
+            width: 100%;
+            max-width: 500px;
+            @include media-breakpoint-down(lg) {
+                max-width: 350px;
+            }
+            @include media-breakpoint-down(sm) {
+                max-width: 300px;
+            }
+
+            &.burg-text {
+                // transform: scale(1);
+                // animation: beat 3s ease-in-out infinite;
+            }
+
+            &.burg-burg {
+                margin-top: -25px;
+                transform: translatey(0px);
+                animation: float 4s ease-in-out infinite;
+            }
+
+            &.burg-shadow {
+                margin-top: -100px;
+            }
+        }
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    .tophead-top-point {
+        margin-top: -15px;
+    }
+    @include media-breakpoint-down(sm) {
+        margin-bottom: 0;
+    }
+    @include media-breakpoint-up(lg) {
+        min-height: 40rem;
+        padding-top: $navbar-height;
+        padding-bottom: 0;
+
+        p {
+            font-size: 1.15rem;
+        }
+
+        h1 {
+            font-size: 3rem;
+        }
+
+        .tophead-top-point {
+            margin-top: -100px;
+            margin-bottom: 1rem;
+        }
+    }
+    @include media-breakpoint-up(xl) {
+        h1 {
+            font-size: 3.5rem;
+        }
+
+        .tophead-top-point {
+            margin-top: -100px;
+            margin-bottom: 1rem;
+        }
+    }
+}
